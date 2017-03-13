@@ -9,6 +9,10 @@ def s_name
   return @s_name
 end
 
+def change_s_name(new_name)
+  @s_name = new_name
+end
+
 
 
 end

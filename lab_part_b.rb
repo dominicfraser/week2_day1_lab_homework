@@ -16,4 +16,8 @@ class SportsTeam
     @team_name = new_name
   end
 
+  def all_players
+    return @players
+  end
+
 end

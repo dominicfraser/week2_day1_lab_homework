@@ -37,6 +37,12 @@ class TestSportsTeam < MiniTest::Test
     assert_equal(false, @example_team.player_present?("Sam5"))
   end
 
+  def test_change_points
+    @example_team.points = 2
+    assert_equal(3, @example_team.match_result("won"))
+    @example_team.points = 2
+    assert_equal(1, @example_team.match_result("lost"))
+  end
 
 
 

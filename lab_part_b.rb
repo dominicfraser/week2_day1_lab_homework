@@ -20,4 +20,8 @@ class SportsTeam
     return @players
   end
 
+  def player_no(number)
+    return @players[number-1]
+  end
+
 end

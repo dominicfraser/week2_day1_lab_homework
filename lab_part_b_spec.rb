@@ -19,4 +19,9 @@ class TestSportsTeam < MiniTest::Test
     assert_equal(["Sam1","Sam2","Sam3"], @example_team.all_players)
   end
 
+  def test_get_specific_player
+    assert_equal("Sam2", @example_team.player_no(2))
+  end
+
+
 end

@@ -52,4 +52,16 @@ def test_title_returns_rental_details
         }, @library1.rental_info("book1"))
 end
 
+def test_add_book
+  @library1.add_book("book4")
+  assert_equal({
+      title: "book4",
+      rental_details: {
+        student_name: "",
+        date: ""
+        }
+      }, @library1.books_array.last)
+end
+
+
 end

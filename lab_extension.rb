@@ -31,6 +31,16 @@ def add_book(title)
       }
 end
 
+def new_rental(title, student_name, due_date)
+
+  @books_array.each do |book|
+    if book[:title] == title
+      book[:rental_details][:student_name] = student_name
+      book[:rental_details][:date] = due_date
+    end
+  end
+end
+
 end
 
 # Create a method that changes the rental details of a book by taking in the title of the book, the student renting it and the date it's due to be returned.
@@ -42,11 +52,3 @@ end
 #         date: "01/02/2010"
 #       }
 #     },
-#     {
-#       title: "book3",
-#       rental_details: {
-#         student_name: "Rob",
-#         date: "01/03/2010"
-#       }
-#     }
-#   ]

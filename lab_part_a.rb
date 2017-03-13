@@ -13,6 +13,10 @@ def change_s_name(new_name)
   @s_name = new_name
 end
 
+def cohort
+  return @cohort
+end
+
 
 
 end

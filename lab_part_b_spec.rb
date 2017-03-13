@@ -27,5 +27,19 @@ class TestSportsTeam < MiniTest::Test
     assert_equal("Rob",@example_team.change_coach("Rob"))
   end
 
+  def test_add_new_player
+    @example_team.add_player("Sam4")
+    assert_equal(["Sam1","Sam2","Sam3", "Sam4"], @example_team.all_players)
+  end
+
+  def test_is_player_on_team?
+    assert_equal(true, @example_team.player_present("Sam1"))
+    assert_equal(false, @example_team.player_present("Sam5"))
+  end
+
+
+
+
+
 
 end

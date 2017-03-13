@@ -28,4 +28,12 @@ class SportsTeam
     @coach = new_name
   end
 
+  def add_player(player)
+    @players << player
+  end
+
+  def player_present?(player)
+    
+  end
+
 end

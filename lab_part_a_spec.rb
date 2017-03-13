@@ -26,10 +26,13 @@ class TestStudent < MiniTest::Test
     assert_equal(13, @student_1.cohort)
   end
 
-  def can_student_talk?
+  def test_can_student_talk?
     talk = @student_1.talk("I can talk!")
-    assert_equal(true, talk == String)
+    assert_equal(String, talk.class)
   end
 
+  def test_favourite_programming_lang
+    assert_equal("I love Ruby", @student_1.fav_lang("Ruby"))
+  end
 
 end

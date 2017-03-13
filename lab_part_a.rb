@@ -25,5 +25,8 @@ def talk(string)
   return " #{@s_name} says: 'string'"
 end
 
+def fav_lang(lang)
+  return "I love #{lang}"
+end
 
 end

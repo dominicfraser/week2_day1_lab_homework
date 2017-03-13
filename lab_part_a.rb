@@ -17,6 +17,8 @@ def cohort
   return @cohort
 end
 
-
+def change_cohort(new_cohort)
+  @cohort = new_cohort
+end
 
 end

@@ -33,8 +33,8 @@ class TestSportsTeam < MiniTest::Test
   end
 
   def test_is_player_on_team?
-    assert_equal(true, @example_team.player_present("Sam1"))
-    assert_equal(false, @example_team.player_present("Sam5"))
+    assert_equal(true, @example_team.player_present?("Sam1"))
+    assert_equal(false, @example_team.player_present?("Sam5"))
   end
 
 

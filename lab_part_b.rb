@@ -33,7 +33,14 @@ class SportsTeam
   end
 
   def player_present?(player)
-    
+    # @players.include?(player) ? true : false
+    for eachplayer in players
+      if eachplayer == player
+        return true
+      else
+        return false
+      end
+    end
   end
 
 end

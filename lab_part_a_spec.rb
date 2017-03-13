@@ -25,5 +25,11 @@ class TestStudent < MiniTest::Test
     @student_1.change_cohort(13)
     assert_equal(13, @student_1.cohort)
   end
-  
+
+  def can_student_talk?
+    talk = @student_1.talk("I can talk!")
+    assert_equal(true, talk == String)
+  end
+
+
 end

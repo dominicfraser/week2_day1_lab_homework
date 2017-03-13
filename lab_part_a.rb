@@ -21,4 +21,9 @@ def change_cohort(new_cohort)
   @cohort = new_cohort
 end
 
+def talk(string)
+  return " #{@s_name} says: 'string'"
+end
+
+
 end

@@ -5,6 +5,10 @@ class Student
     @cohort = cohort
   end
 
-  
+def s_name
+  return @s_name
+end
+
+
 
 end

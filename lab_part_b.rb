@@ -24,4 +24,8 @@ class SportsTeam
     return @players[number-1]
   end
 
+  def change_coach(new_name)
+    @coach = new_name
+  end
+
 end

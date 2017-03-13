@@ -11,4 +11,8 @@ class TestSportsTeam < MiniTest::Test
     assert_equal("Jakes", @example_team.team_name)
   end
 
+  def test_change_team_name
+    assert_equal("Lizs", @example_team.change_team_name("Lizs"))
+  end
+
 end

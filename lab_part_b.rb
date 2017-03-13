@@ -12,4 +12,8 @@ class SportsTeam
     return @team_name
   end
 
+  def change_team_name(new_name)
+    @team_name = new_name
+  end
+
 end

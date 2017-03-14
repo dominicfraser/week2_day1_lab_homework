@@ -41,6 +41,9 @@ class Library
       if book[:title] == title
         book[:rental_details][:student_name] = student_name
         book[:rental_details][:date] = due_date
+
+#or can make it more compressed as
+  #book[:rental_details] = {student_name: student, date: date}
       end
     end
   end

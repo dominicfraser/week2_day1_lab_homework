@@ -1,9 +1,13 @@
 class Library
 
+#set useful else returns and gaurd clauses to expand on the below
+
   attr_accessor :books_array
 
   def initialize(books_array)
     @books_array = books_array
+#better->@books_array = books_array || []
+#sets as empty array if books is nil
   end
 
   def book_info(title)

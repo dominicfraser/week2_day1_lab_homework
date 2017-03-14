@@ -1,8 +1,10 @@
 class SportsTeam
   
   attr_accessor :team_name, :players, :coach, :points
+  #can also not include in accessor as long as there is a method to change it, more secure than team_name.team_name = 
 
   def initialize(team_name, players, coach, points=0)
+    #don't need to have points=0 parameter if ALWAYS going to be zero, below can then just be @points = 0
     @team_name = team_name
     @players = players
     @coach = coach
@@ -45,15 +47,15 @@ class SportsTeam
   end
 
   def match_result(result)
-    if result == "won"
+    if result.downcase == "won"
       @points += 1
-    elsif result == "lost"
+    elsif result.downcase == "lost"
       @points -= 1
-    elsif result == "draw"
+    elsif result.downcase == "draw"
       @points = @points
     else
       "error"
     end
   end
-#make this better
+#make this better, case?
 end
